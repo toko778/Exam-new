@@ -3,7 +3,6 @@ const currentDate = new Date();
 let day = currentDate.getDate();
 let month = currentDate.getMonth() + 1; // თვეები იწყება 0-დან, ამიტომ ვუმატებთ 1-ს
 let year = currentDate.getFullYear();
-
 console.log(`მიმდინარე თარიღი: ${day}/${month}/${year}`);
 
 // 2. სტრიქონის გადაყვანა მაღალ რეგისტრში (Capital Letters)
