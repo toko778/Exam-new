@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="John Doe">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ვებგვერდის მარკირება - გამოცდა</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="https://google.com" target="_blank">გადადი Google-ზე</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>მულტიმედია სექცია</h2>
+            <img src="https://via.placeholder.com/150" alt="საგამოცდო სატესტო სურათი">
+            <br><br>
+            <video src="sample-video.mp4" controls width="320">
+                თქვენს ბრაუზერს არ აქვს ვიდეო ტეგის მხარდაჭერა.
+            </video>
+        </section>
+        <section>
+            <h2>მონაცემთა ცხრილი</h2>
+            <table border="1" cellpadding="10" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>N</th>
+                        <th>სტუდენტის სახელი</th>
+                        <th>სასწავლო მოდული</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>გიორგი</td>
+                        <td>Front-end დეველოპმენტი</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>ანი</td>
+                        <td>ვებ გვერდის მარკირება</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <h2>სარეგისტრაციო ფორმა</h2>
+            <form action="#" method="GET">
+                <label for="username">მომხმარებლის სახელი:</label>
+                <input type="text" id="username" name="username" required placeholder="ჩაწერეთ სახელი">
+                <br><br>
+                <label for="useremail">ელ-ფოსტა (სისტემური):</label>
+                <input type="email" id="useremail" name="useremail" disabled value="readonly@example.com">
+                <br><br>
+                <button type="submit">მონაცემების გაგზავნა</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 თორნიკე ბარბაქაძე</p>
+    </footer>
+</body>
+</html>
