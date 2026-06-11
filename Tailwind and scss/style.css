@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Helvetica&display=swap");
+body {
+  font-family: "Helvetica", sans-serif;
+  background-color: #f5f6fa;
+  padding: 20px;
+}
+
+.nav-link {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+.nav-link:hover {
+  color: #e74c3c;
+}
+
+.styled-box {
+  width: 150px;
+  height: 150px;
+  border: 3px solid #3498db;
+  border-radius: 15px;
+  background-color: white;
+  margin: 20px 0;
+}
+
+@keyframes spinText {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(260deg);
+  }
+}
+.animated-text {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #2ecc71;
+  color: white;
+  font-weight: bold;
+  border-radius: 6px;
+  animation: spinText 3s linear infinite alternate;
+}
+
+@media (max-width: 768px) {
+  body {
+    background-color: #dfe4ea;
+  }
+  .styled-box {
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */

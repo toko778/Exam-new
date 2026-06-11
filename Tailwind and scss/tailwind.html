@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Tornike Barbakadze">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS - ადაპტური დიზაინი</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-100 p-8">
+    <h1 class="text-3xl font-extrabold text-center text-slate-800 mb-8">Tailwind Responsive დემო</h1>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+        <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-blue-500">
+            <h2 class="text-xl font-bold text-blue-600 mb-2">მოდული 1</h2>
+            <p class="text-gray-600">ეს გვერდი სრულად ადაპტირებულია ნებისმიერ ეკრანზე. მობილურ მოწყობილობებზე ეს ორი ბლოკი განლაგდება ვერტიკალურად, ერთმანეთის მიყოლებით.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-green-500">
+            <h2 class="text-xl font-bold text-green-600 mb-2">მოდული 2</h2>
+            <p class="text-gray-600">კომპიუტერის ან პლანშეტის ეკრანზე გადასვლისას, Tailwind-ის "md:" პრეფიქსი ავტომატურად გადააწყობს ამ ელემენტებს ორ სვეტად ჰორიზონტალურად.</p>
+        </div>
+    </div>
+</body>
+</html>

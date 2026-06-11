@@ -1,0 +1,66 @@
+// 1. ვებფონტის შემოტანა გუგლიდან
+@import url('https://fonts.googleapis.com/css2?family=Helvetica&display=swap');
+
+// 2. Sass ცვლადების (Variables) შექმნა ფერების მარტივი მართვისთვის
+$primary-color: #3498db;
+$danger-color: #e74c3c;
+$bg-color: #f5f6fa;
+body {
+    font-family: 'Helvetica', sans-serif;
+    background-color: $bg-color;
+    padding: 20px;
+}
+
+// 3. ჩაშენებული სინტაქსი (Nesting) და მაუსის მიტანის ეფექტი (Hover)
+.nav-link {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    transition: color 0.3s ease;
+     // & ნიშნავს თავად .nav-link კლასს ჰოვერის დროს
+    &:hover {
+        color: $danger-color; 
+    }
+}
+
+// 4. ოთხკუთხედი ელემენტი ჩარჩოთი (border) და დამრგვალებით (border-radius)
+.styled-box {
+    width: 150px;
+    height: 150px;
+    border: 3px solid $primary-color; // ჩარჩო ცვლადი ფერით
+    border-radius: 15px; // კუთხეების დამრგვალება
+    background-color: white;
+    margin: 20px 0;
+}
+
+// 5. 2D ტრანსფორმაცია და ანიმაცია (ტექსტის დატრიალება 260 გრადუსით)
+@keyframes spinText {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(260deg); // ტრიალდება ზუსტად 260 გრადუსით
+    }
+}
+
+.animated-text {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #2ecc71;
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+    // ანიმაციის მიბმა: სახელი, ხანგრძლივობა, უსასრულო ტრიალი და უკან დაბრუნება (alternate)
+    animation: spinText 3s linear infinite alternate;
+}
+
+// 6. რესპონსივ დიზაინი @media ქუერის გამოყენებით (მობილურებისთვის)
+@media (max-width: 768px) {
+    body {
+        background-color: #dfe4ea; // პატარა ეკრანზე ფონი იცვლება
+    }
+    .styled-box {
+        width: 100%; // მობილურზე კვადრატი იწელება სრულ სიგანეზე
+    }
+}
