@@ -1,0 +1,115 @@
+// ცვლადები
+$card-bg: #ffffff;
+$body-bg: #f5f6fa;
+$primary-color: #2ecc71;
+$text-color: #2c3e50;
+$border-radius: 8px;
+
+body {
+    background-color: $body-bg;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    color: $text-color;
+}
+
+header {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+main {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+// 1. პროდუქტების ჩამონათვალის ბადე (CSS Grid-ის გამოყენება)
+.products-grid {
+    display: grid;
+    gap: 20px;
+    
+    // საწყისი ვერსია (დესკტოპი): გვინდა 4 სვეტი გვერდიგვერდ
+    grid-template-columns: repeat(4, 1fr);
+}
+
+// ბარათების ძირითადი სტილები
+.product-card {
+    background-color: $card-bg;
+    border: 1px solid #e1e8ed;
+    border-radius: $border-radius;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.02);
+    transition: transform 0.2s;
+
+    &:hover {
+        transform: translateY(-5px);
+    }
+
+    .product-image {
+        background-color: #eceff1;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 50px;
+    }
+
+    .product-info {
+        padding: 15px;
+        text-align: center;
+
+        h3 {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+
+        .price {
+            color: $primary-color;
+            font-weight: bold;
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+
+        .buy-btn {
+            background-color: $text-color;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            font-weight: bold;
+
+            &:hover {
+                background-color: lighten($text-color, 10%);
+            }
+        }
+    }
+}
+
+// ==========================================
+// 2. რესპონსივი მედია ქუერების (@media) გამოყენებით
+// ==========================================
+
+// პლანშეტებისთვის (ეკრანის სიგანე 992 პიქსელზე ნაკლებია) - გადაგვაქვს 2 სვეტზე
+@media (max-width: 992px) {
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+// მობილური ტელეფონებისთვის (ეკრანის სიგანე 576 პიქსელზე ნაკლებია) - გადაგვაქვს 1 სვეტზე
+@media (max-width: 576px) {
+    .products-grid {
+        grid-template-columns: 1fr; // თითო პროდუქტი მთელ სიგანეზე
+    }
+    
+    header {
+        h1 {
+            font-size: 22px;
+        }
+    }
+}
