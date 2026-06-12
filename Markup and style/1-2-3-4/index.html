@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Tornike Barbakadze"
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>მარკირება და სტილი - სწავლის შედეგი 1-4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">ჩემი გამოცდა</div>
+        <nav>
+            <a href="https://google.com" target="_blank" class="nav-link">გადადი Google-ზე</a>
+        </nav>
+    </header>
+    <main>
+        <section class="media-section">
+            <h1>მულტიმედია და გრაფიკა</h1>
+            <div class="img-wrapper">
+                <img src="https://via.placeholder.com/300x150" alt="საგამოცდო გრაფიკული ობიექტი">
+            </div>
+            <div class="video-wrapper">
+                <video src="sample-video.mp4" controls width="100%">
+                    თქვენს ბრაუზერს არ აქვს ვიდეო ტეგის მხარდაჭერა.
+                </video>
+            </div>
+        </section>
+        <section class="table-section">
+            <h2>მონაცემთა ორგანიზება ცხრილში</h2>
+            <table border="1" cellpadding="12" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>N</th>
+                        <th>სტუდენტი</th>
+                        <th>მოდული</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>თორნიკე</td>
+                        <td>Front-end დეველოპმენტი</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>გიორგი</td>
+                        <td>მარკირება და სტილები</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="form-section">
+            <h2>სარეგისტრაციო ფორმა</h2>
+            <form action="#" method="POST">
+            
+                <div class="form-group">
+                    <label for="username">მომხმარებლის სახელი *</label>
+                    <input type="text" id="username" name="username" required placeholder="ჩაწერეთ სახელი...">
+                </div>
+                <div class="form-group">
+                    <label for="useremail">სისტემური ელ-ფოსტა</label>
+                    <input type="email" id="useremail" name="useremail" disabled value="exam.readonly@domain.com">
+                </div>
+                <button type="submit" class="submit-btn">მონაცემების გაგზავნა</button>
+            </form>
+        </section>
+        <section class="animation-section">
+            <h2>Sass-ის ეფექტები და ანიმაცია</h2>
+            
+            <div class="styled-box"></div>
+
+            <div class="animated-text-container">
+                <p class="spinning-text">ტექსტი ტრიალებს 260°–ით!</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 ყველა უფლება დაცულია. საგამოცდო მოდული 1-4.</p>
+    </footer>
+</body>
+</html>
