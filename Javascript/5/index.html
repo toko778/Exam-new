@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>სწავლის შედეგი 5 - DOM მანიპულაციები</title>
+    <style>
+        /* მარტივი კლასები დინამიური ცვლილების საჩვენებლად */
+        .highlight-title {
+            color: #2c3e50;
+            font-size: 36px;
+            background-color: #f1f2f6;
+            padding: 10px;
+        }
+        .custom-input {
+            padding: 8px;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+        }
+        .active-input {
+            border-color: #3498db;
+            background-color: #ebf5fb;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="main-heading">საგამოცდო მთავარი სათაური</h1>
+
+    <p class="info-text">პირველი სატესტო პარაგრაფი (კლასი info-text)</p>
+    <p class="info-text">მეორე სატესტო პარაგრაფი (კლასი info-text)</p>
+
+    <br>
+
+    <input type="text" id="test-input" class="custom-input" placeholder="დააწკაპუნე აქ...">
+
+    <br><br>
+
+    <select id="test-select">
+        <option value="">აირჩიეთ ოფცია...</option>
+        <option value="1">ოფცია 1</option>
+        <option value="2">ოფცია 2</option>
+    </select>
+
+    <br><br>
+
+    <button id="test-button">დააჭირე ღილაკს</button>
+
+    <div id="wrapper-div" style="margin-top: 30px; padding: 15px; border: 2px dashed #95a5a6;">
+        <h3>აქ განთავსდება ახალი ელემენტი:</h3>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
